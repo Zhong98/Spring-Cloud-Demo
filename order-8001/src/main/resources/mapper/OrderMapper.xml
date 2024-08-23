@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="order.mapper.OrderMapper">
+    <insert id="saveOrder" parameterType="entity.Order">
+        insert into orders values (#{id},#{productId},#{username},#{createTime});
+    </insert>
+</mapper>
